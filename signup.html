@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>NSBE CalPoly</title>
+	<link rel="stylesheet" href="assets/nsbe.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+	<script src="assets/nsbjs.js"></script>
+</head>
+<body>
+
+	<!--Sidebar Menu -->
+	<nav class="sidebar nav">
+        <a class="item" href="index.html"><i class="material-icons">home</i><span class="text">Home</span></a>
+        <a class="item" href="events.html"><i class="material-icons">event</i><span class="text">Events</span></a>
+        <a class="item" href="gallery.html"><i class="material-icons">camera_alt</i><span class="text">Gallery</span></a>
+        <a class="item" href="resources.html"><i class="material-icons">school</i><span class="text">Resources</span></a>
+        <a class="item" href="aboutus.html"><i class="material-icons">group</i><span class="text">About Us</span></a>
+        <a class="active item" href="signup.html"><i class="material-icons">touch_app</i><span class="text">Join Nsbe</span></a>
+	</nav>
+    
+    <!-- Fixed navbar -->
+    <nav class="topnav">
+        <div id="toggle" class="wrap toc menu" onclick="menubtn(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul onclick="nav_close()">            
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="events.html">Events</a></li>
+            <li><a class="item" href="gallery.html">Gallery</a></li>
+            <li><a class="item" href="resources.html">Resources</a></li>
+            <li class="right"><a class="item" href="aboutus.html">About Us</a></li>
+            <li class="right"><a class="active item" href="signup.html">Join Nsbe</a></li>
+        </ul>
+        <div class="space">
+        </div>
+    </nav>
+	<!-- Page Contents -->
+	<section class="pusher" onclick="nav_close()">
+		
+		<div class="segment">
+            <div class="row">
+                <div class="form col-6 col-t-6">
+                    <form action="https://formspree.io/contact@nsbecpp.com" method="POST">
+                        <input type="text" placeholder="First name" name="firstname" required>
+                        <i class="material-icons md-24">person</i>
+
+                        <input type="text" placeholder="Last name" name="lastname" required>
+                        <i class="material-icons md-24">person</i>
+
+                        <input type="text" placeholder="CPP Email" name="email" required>
+                        <i class="material-icons md-24">email</i>
+
+                        <p>By joining NSBE you agree to our <a href="#">No Terms & No Privacy</a>.</p>
+                        <button type="submit" class="joinbtn">Join NSBE</button>                         
+                    </form>
+                    
+                    <div class="col-5">
+                    </div>
+                </div>
+            </div>
+                
+		</div>
+
+		<section class="footer segment">
+			
+		</section>
+
+
+	</section>
+</body>
+	<script src="assets/nsbjs.js"></script>
+</html>
